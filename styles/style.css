@@ -33,7 +33,7 @@ ol {
   display: flex;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -207,8 +207,14 @@ ol {
   display: block;
 }
 
+/* Добавлено состояние :active в соответствии с замечанием */
+
+.search-form__checkbox:active + .search-form__pseudo-checkbox::before {
+  display: block;
+}
+
 .search-form__pseudo-checkbox::before {
-  content: '';
+  content: "";
   display: none;
   width: 15px;
   height: 15px;
